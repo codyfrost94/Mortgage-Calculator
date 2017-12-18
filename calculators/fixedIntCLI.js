@@ -1,3 +1,10 @@
+var total = process.argv[2];
+var down = process.argv[3];
+var interest = process.argv[4];
+var years = process.argv[5];
+
+
+
 mortgageCalc = function(total, down, interest, years) {
 	var principal = total-down;	
 	var monthlyInt = (interest/12)/100;	
@@ -12,4 +19,4 @@ mortgageCalc = function(total, down, interest, years) {
 	console.log("MONTHLY PAYMENT: " + monthlyPayment);
 };
 
-mortgageCalc(2000000, 100000, 3.5, 40);
+mortgageCalc(total, down, interest, years);
